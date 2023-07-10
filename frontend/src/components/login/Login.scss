@@ -1,0 +1,60 @@
+@import '../../Styles/Variables.scss';
+@import '../../Styles/Mixins.scss';
+
+.login-section {
+  padding: 1rem 2rem;
+  box-shadow: 0 0 2px;
+  border-radius: 0.2rem;
+  height: fit-content;
+
+  .login-title {
+    @include subTitle;
+    text-decoration: underline;
+  }
+
+  .login-form {
+    .label-input {
+      @include inputLabel;
+      position: relative;
+
+      .email-required-icon {
+        position: absolute;
+        top: 0.3rem;
+        left: 2.5rem;
+        font-size: 0.5rem;
+        color: red;
+      }
+
+      .password-show-hide {
+        position: absolute;
+        top: 50%;
+        right: 1rem;
+        cursor: pointer;
+      }
+
+      .password-required-icon {
+        position: absolute;
+        top: 0.3rem;
+        left: 4.3rem;
+        font-size: 0.5rem;
+        color: red;
+      }
+    }
+
+    .login-btn {
+      @include button;
+    }
+  }
+
+  .login-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+    .icon {
+      font-size: 4rem;
+      color: $title;
+      cursor: pointer;
+    }
+  }
+}

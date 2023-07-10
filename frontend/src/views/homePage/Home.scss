@@ -1,0 +1,63 @@
+@import '../../Styles/Variables.scss';
+@import '../../Styles/Mixins.scss';
+
+.home-page {
+  width: 100%;
+  max-width: 1024px;
+  margin: auto;
+
+  .home-container {
+    width: 60%;
+    margin: auto;
+    position: relative;
+
+    .home-title {
+      @include title;
+    }
+
+    .blog-tabs {
+      width: 94%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 1rem;
+
+      .tabs {
+        padding: 1rem;
+        cursor: pointer;
+        box-shadow: 0 0 2px;
+        text-align: center;
+      }
+
+      .active-tabs {
+        background-color: #bbe1fb;
+        border-bottom: 1px solid transparent;
+        cursor: pointer;
+      }
+
+      .active-tabs::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 2px;
+        background-color: blue;
+      }
+    }
+
+    .account-container {
+      flex-grow: 1;
+
+      .account {
+        padding: 1.2rem;
+        display: none;
+      }
+
+      .active-account {
+        display: block;
+      }
+    }
+  }
+}

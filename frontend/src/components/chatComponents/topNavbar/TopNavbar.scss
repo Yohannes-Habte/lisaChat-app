@@ -1,0 +1,28 @@
+.chat-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background-color: #008080;
+  color: #ffffff;
+
+  .search-users {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .menu-container {
+    .icon{
+        color: black;
+    }
+    .Menu {
+      color: black;
+    }
+  }
+}
+
+.Box {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}

@@ -1,0 +1,32 @@
+@import '../../Styles/Variables.scss';
+@import '../../Styles/Mixins.scss';
+
+.register-section {
+  padding: 1rem 2rem;
+  box-shadow: 0 0 2px;
+  border-radius: 0.2rem;
+
+  .register-title {
+    @include subTitle;
+    text-decoration: underline
+  }
+
+  .register-form {
+    .label-input {
+      @include inputLabel;
+      position: relative;
+
+      .password-display-manager {
+        position: absolute;
+        top: 50%;
+        right: 1rem;
+        cursor: pointer;
+
+      }
+    }
+
+    .register-btn {
+      @include button;
+    }
+  }
+}
